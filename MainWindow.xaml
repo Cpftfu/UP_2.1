@@ -1,0 +1,35 @@
+﻿<Window x:Class="UP_2._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UP_2._1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="230*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Frame x:Name="forGrid" Grid.ColumnSpan="3" Grid.Row="1" Margin="0,5,0,0" Grid.RowSpan="5"/>
+        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="20,20,20,20">
+            <Button x:Name="firstGrid" Content="ПЕРВАЯ ТАБЛИЧКА" Margin="9,9,9,9" Background="White" BorderBrush="White" Foreground="Black" FontSize="16" Click="firstGrid_Click"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="20,20,20,20" Grid.Column="1">
+            <Button x:Name="secondGrid" Content="ВТОРАЯ ТАБЛИЧКА" Margin="9,9,9,9" Background="White" BorderBrush="White" Foreground="Black" FontSize="16" Click="secondGrid_Click"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="20,20,20,20" Grid.Column="2">
+            <Button x:Name="thirdGrid" Content="ТРЕТЬЯ ТАБЛИЧКА" Margin="9,9,9,9" Background="White" BorderBrush="White" Foreground="Black" FontSize="16" Click="thirdGrid_Click"/>
+        </Border>
+    </Grid>
+</Window>
